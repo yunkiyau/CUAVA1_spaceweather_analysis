@@ -37,7 +37,7 @@ pip install numpy matplotlib pandas scipy astropy statsmodels
 ```
 
 ## Usage
-1. Place the TLE and space weather data files in the repository.  
+1. Place the TLE file (`cuava1.txt`) and OMNI space weather file (`CUAVA-1_Omni2.txt`) in the repository.
 2. Run the main script:
 ```bash
 python CUAVA1eccentricityandspaceweather_analysis.py
