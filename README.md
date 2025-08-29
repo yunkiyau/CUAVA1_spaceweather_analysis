@@ -1,7 +1,7 @@
 # CUAVA-1 Eccentricity and Space Weather Analysis
 
-This project explores associations between the orbital eccentricity of the **CUAVA-1 CubeSat** and space weather activity.  
-The analysis combines satellite orbital data (TLEs) with space weather indices to study periodicities, correlations, and potential lags between orbital dynamics and solar–geomagnetic conditions.
+This project explores associations between the orbital eccentricity of the **CUAVA-1 CubeSat** and space weather activity.
+The analysis combines CUAVA-1 orbital data (TLEs) with space weather index logs during CUAVA-1's mission to study periodicities, correlations, and potential lags between orbital dynamics and solar–geomagnetic conditions. I conducted this research under the supervision of Prof. Iver Cairns (USYD) as part of the Physics Special Studies Program.
 
 ## Data Sources
 - **Satellite orbital data**: TLEs from [CelesTrak / US Space Force](https://celestrak.org).  
@@ -17,10 +17,10 @@ The script implements:
 - Cross-correlation analysis to evaluate lag times between eccentricity/eccentricity-derivative and space weather indices.  
 - Estimation of uncertainties (FWHM on spectral peaks and lag correlations).
 
-## Files
-- `CUAVA1eccentricityandspaceweather_analysis.py` — main analysis script.  
-- `cuava1.txt` — TLE data file (to be added).  
-- `CUAVA-1_Omni2.txt` — space weather index data file (to be added).
+## Folder Structure
+
+- `src/`: `CUAVA1eccentricityandspaceweather_analysis.py` — main analysis script.  
+- `data/`: TLE and space weather indices data
 
 ## Requirements
 Python 3.10+ with the following packages:
@@ -37,7 +37,7 @@ pip install numpy matplotlib pandas scipy astropy statsmodels
 ```
 
 ## Usage
-1. Place the TLE file (`cuava1.txt`) and OMNI space weather file (`CUAVA-1_Omni2.txt`) in the repository.  
+1. Place the TLE and space weather data files in the repository.  
 2. Run the main script:
 ```bash
 python CUAVA1eccentricityandspaceweather_analysis.py
@@ -50,6 +50,10 @@ python CUAVA1eccentricityandspaceweather_analysis.py
 ## Author
 Developed by **Yunki Yau**  
 GitHub: [yunkiyau](https://github.com/yunkiyau)  
-Email: yunki.yau@gmail.com  
+Email: yunki.yau@gmail.com, yyau2516@uni.sydney.edu.au
 
----
+
+## Acknowledgements
+Supervised by Prof. Iver Cairns - USYD Professor of Space Physics, Director, CUAVA: the ARC Training Centre for CubeSats, UAVs, and Their Applications.
+
+
